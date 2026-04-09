@@ -1,0 +1,4601 @@
+{
+  "timestamp": "20260409_221506",
+  "model": "gemma-4-27b",
+  "api_base_url": "http://192.168.0.254:8000/v1",
+  "total_cases": 150,
+  "overall": {
+    "total_cases": 150,
+    "valid_json_rate": 0.9867,
+    "tool_selection_accuracy": 0.9867,
+    "param_completeness": 0.9867,
+    "param_accuracy": 0.7467,
+    "format_compliance_rate": 0.9867,
+    "avg_optional_bonus": 0.9533,
+    "avg_response_time_ms": 757.7,
+    "error_count": 2
+  },
+  "by_complexity": {
+    "simple": {
+      "total_cases": 45,
+      "valid_json_rate": 0.9556,
+      "tool_selection_accuracy": 0.9556,
+      "param_completeness": 0.9556,
+      "param_accuracy": 0.8444,
+      "format_compliance_rate": 0.9556,
+      "avg_optional_bonus": 0.9556,
+      "avg_response_time_ms": 616.1,
+      "error_count": 2
+    },
+    "medium": {
+      "total_cases": 60,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.75,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 0.9333,
+      "avg_response_time_ms": 651.0,
+      "error_count": 0
+    },
+    "complex": {
+      "total_cases": 45,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.6444,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 0.9778,
+      "avg_response_time_ms": 1041.6,
+      "error_count": 0
+    }
+  },
+  "by_test_type": {
+    "direct": {
+      "total_cases": 50,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.84,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 0.96,
+      "avg_response_time_ms": 739.7,
+      "error_count": 0
+    },
+    "inference": {
+      "total_cases": 50,
+      "valid_json_rate": 0.98,
+      "tool_selection_accuracy": 0.98,
+      "param_completeness": 0.98,
+      "param_accuracy": 0.56,
+      "format_compliance_rate": 0.98,
+      "avg_optional_bonus": 0.92,
+      "avg_response_time_ms": 855.3,
+      "error_count": 1
+    },
+    "edge": {
+      "total_cases": 30,
+      "valid_json_rate": 0.9667,
+      "tool_selection_accuracy": 0.9667,
+      "param_completeness": 0.9667,
+      "param_accuracy": 0.8,
+      "format_compliance_rate": 0.9667,
+      "avg_optional_bonus": 0.9667,
+      "avg_response_time_ms": 708.9,
+      "error_count": 1
+    },
+    "distractor": {
+      "total_cases": 20,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.9,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 1.0,
+      "avg_response_time_ms": 632.0,
+      "error_count": 0
+    }
+  },
+  "by_tool": {
+    "get_current_weather": {
+      "total_cases": 15,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.7333,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 1.0,
+      "avg_response_time_ms": 450.1,
+      "error_count": 0
+    },
+    "get_exchange_rate": {
+      "total_cases": 15,
+      "valid_json_rate": 0.8667,
+      "tool_selection_accuracy": 0.8667,
+      "param_completeness": 0.8667,
+      "param_accuracy": 0.8,
+      "format_compliance_rate": 0.8667,
+      "avg_optional_bonus": 0.8667,
+      "avg_response_time_ms": 929.9,
+      "error_count": 2
+    },
+    "get_time_in_timezone": {
+      "total_cases": 15,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 1.0,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 1.0,
+      "avg_response_time_ms": 468.3,
+      "error_count": 0
+    },
+    "search_products": {
+      "total_cases": 15,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.5333,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 1.0,
+      "avg_response_time_ms": 480.0,
+      "error_count": 0
+    },
+    "send_email": {
+      "total_cases": 15,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.6667,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 1.0,
+      "avg_response_time_ms": 785.1,
+      "error_count": 0
+    },
+    "book_restaurant": {
+      "total_cases": 15,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.8,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 0.7333,
+      "avg_response_time_ms": 771.2,
+      "error_count": 0
+    },
+    "calculate_loan": {
+      "total_cases": 15,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 1.0,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 1.0,
+      "avg_response_time_ms": 567.7,
+      "error_count": 0
+    },
+    "create_calendar_event": {
+      "total_cases": 15,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.8,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 0.9333,
+      "avg_response_time_ms": 1145.8,
+      "error_count": 0
+    },
+    "search_flights": {
+      "total_cases": 15,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.7333,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 1.0,
+      "avg_response_time_ms": 850.4,
+      "error_count": 0
+    },
+    "create_order": {
+      "total_cases": 15,
+      "valid_json_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_completeness": 1.0,
+      "param_accuracy": 0.4,
+      "format_compliance_rate": 1.0,
+      "avg_optional_bonus": 1.0,
+      "avg_response_time_ms": 1128.6,
+      "error_count": 0
+    }
+  },
+  "cases": [
+    {
+      "case_id": "weather_direct_01",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "What's the weather in Tokyo?",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "Tokyo"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 483.3,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_direct_02",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "查一下北京现在的天气",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "北京"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 368.1,
+      "missing_params": [],
+      "wrong_params": {
+        "city": {
+          "expected": "Beijing",
+          "actual": "北京"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_direct_03",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "Tell me the current weather conditions in San Francisco.",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "San Francisco"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 491.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_direct_04",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "伦敦天气怎么样？",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "London"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 539.5,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_direct_05",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "Get me the weather for Sydney, Australia.",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "Sydney, Australia"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 615.2,
+      "missing_params": [],
+      "wrong_params": {
+        "city": {
+          "expected": "Sydney",
+          "actual": "Sydney, Australia"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_inference_01",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "I'm about to land at CDG airport — should I bring an umbrella?",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "Paris"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 482.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_inference_02",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "Will I need a jacket for my visit to the Statue of Liberty tomorrow?",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "New York"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 554.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_inference_03",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "我下周要去看埃菲尔铁塔，那边冷不冷？",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "Paris"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 419.8,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_inference_04",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "Is it warm enough to visit the Colosseum in shorts right now?",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "Rome"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 425.3,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_inference_05",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "我在浦东机场刚下飞机，外面需要穿外套吗？",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "Shanghai"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 424.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_edge_01",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "edge",
+      "prompt": "Weather in São Paulo?",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "São Paulo"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 369.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_edge_02",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "edge",
+      "prompt": "What's it like outside in Truth or Consequences, New Mexico?",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "Truth or Consequences, New Mexico"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 402.6,
+      "missing_params": [],
+      "wrong_params": {
+        "city": {
+          "expected": "Truth or Consequences",
+          "actual": "Truth or Consequences, New Mexico"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_edge_03",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "edge",
+      "prompt": "乌鲁木齐的天气",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "乌鲁木齐"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 387.5,
+      "missing_params": [],
+      "wrong_params": {
+        "city": {
+          "expected": "Urumqi",
+          "actual": "乌鲁木齐"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_distractor_01",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "distractor",
+      "prompt": "I was thinking about going to Paris last summer but now I need to check the weather in London.",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "London"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 364.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "weather_distractor_02",
+      "tool_name": "get_current_weather",
+      "complexity": "simple",
+      "test_type": "distractor",
+      "prompt": "我之前住在上海，但现在搬到深圳了，帮我看看这里天气如何。",
+      "actual_tool_name": "get_current_weather",
+      "actual_parameters": {
+        "city": "Shenzhen"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 422.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_direct_01",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "What's the exchange rate from USD to EUR?",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "USD",
+        "to_currency": "EUR"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 431.3,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_direct_02",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "人民币兑日元的汇率是多少？",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "CNY",
+        "to_currency": "JPY"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 721.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_direct_03",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "GBP to CAD exchange rate please.",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "GBP",
+        "to_currency": "CAD"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 510.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_direct_04",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "Show me the rate for converting AUD to NZD.",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "AUD",
+        "to_currency": "NZD"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 511.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_direct_05",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "查一下美元换泰铢的汇率",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "USD",
+        "to_currency": "TWD"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 819.4,
+      "missing_params": [],
+      "wrong_params": {
+        "to_currency": {
+          "expected": "THB",
+          "actual": "TWD"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_inference_01",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "I'm traveling from the US to Japan, how much yen will I get for my dollars?",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "USD",
+        "to_currency": "JPY"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 500.5,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_inference_02",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "我从中国去英国留学，想知道人民币换英镑划不划算",
+      "actual_tool_name": null,
+      "actual_parameters": null,
+      "valid_json": false,
+      "tool_correct": false,
+      "params_present": false,
+      "params_correct": false,
+      "format_compliant": false,
+      "optional_bonus": 0.0,
+      "response_time_ms": 6057.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": "No tool call in response. Content: 换钱划不划算主要取决于**汇率的时机**以及**换钱的渠道**。由于汇率是实时波动的，我无法给出一个绝对的“划算”或“不划算”的结论，但我可以从以下几个维度帮你分析，并提供一些实用的建议：\n\n### 1. 关注汇率走势 (Timing)\n人民币对英镑的汇率受两国经济政策、利率差异（如英国央行与中国人民银行的利率差）以及国际政治环境影响。\n*   **什么时候划算：** 如果当前人民币处于相对强势期"
+    },
+    {
+      "case_id": "exchange_inference_03",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "How many Swiss francs can I get for 100 euros?",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "EUR",
+        "to_currency": "CHF"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 671.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_inference_04",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "I need to pay a supplier in South Korea. What's the won worth against the dollar right now?",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "USD",
+        "to_currency": "KRW"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 506.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_inference_05",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "我在新加坡工作，想把工资寄回中国，汇率怎么样？",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "SGD",
+        "to_currency": "CNY"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 446.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_edge_01",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "edge",
+      "prompt": "What is 1 Bitcoin worth in US dollars? Just kidding, give me USD to USD.",
+      "actual_tool_name": null,
+      "actual_parameters": null,
+      "valid_json": false,
+      "tool_correct": false,
+      "params_present": false,
+      "params_correct": false,
+      "format_compliant": false,
+      "optional_bonus": 0.0,
+      "response_time_ms": 366.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": "No tool call in response. Content: 1 USD is worth 1 USD."
+    },
+    {
+      "case_id": "exchange_edge_02",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "edge",
+      "prompt": "Convert Turkish lira to Argentine peso rate.",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "TRY",
+        "to_currency": "ARS"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 873.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_edge_03",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "edge",
+      "prompt": "越南盾兑换印尼盾的汇率？",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "VND",
+        "to_currency": "IDR"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 504.8,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_distractor_01",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "distractor",
+      "prompt": "I used to need the EUR to GBP rate a lot, but now I only care about USD to JPY.",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "USD",
+        "to_currency": "JPY"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 516.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "exchange_distractor_02",
+      "tool_name": "get_exchange_rate",
+      "complexity": "simple",
+      "test_type": "distractor",
+      "prompt": "我朋友说澳元最近涨了，但我想查的是欧元对人民币的汇率。",
+      "actual_tool_name": "get_exchange_rate",
+      "actual_parameters": {
+        "from_currency": "EUR",
+        "to_currency": "CNY"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 512.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_direct_01",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "What time is it in the America/New_York timezone?",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "America/New_York"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 521.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_direct_02",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "现在Asia/Shanghai时区几点了？",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Asia/Shanghai"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 392.5,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_direct_03",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "Tell me the current time in Europe/London.",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Europe/London"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 451.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_direct_04",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "Time in Asia/Tokyo please.",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Asia/Tokyo"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 446.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_direct_05",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "direct",
+      "prompt": "查一下Australia/Sydney现在的时间",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Australia/Sydney"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 443.7,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_inference_01",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "What time is it in Japan right now?",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Asia/Tokyo"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 387.3,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_inference_02",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "My colleague in Berlin — is it still working hours there?",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Europe/Berlin"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 388.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_inference_03",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "迪拜现在几点？我要给那边的客户打电话。",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Asia/Dubai"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 391.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_inference_04",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "Is it daytime in São Paulo right now?",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "America/Sao_Paulo"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1019.5,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_inference_05",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "inference",
+      "prompt": "I need to call my parents in Mumbai, is it too late to ring them?",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Asia/Kolkata"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 520.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_edge_01",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "edge",
+      "prompt": "What time is it at the International Date Line? Use Pacific/Auckland.",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Pacific/Auckland"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 396.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_edge_02",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "edge",
+      "prompt": "加德满都现在几点？那里好像有个奇怪的时区偏移。",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Asia/Kathmandu"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 402.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_edge_03",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "edge",
+      "prompt": "Time in Newfoundland, Canada? I know it's a half-hour offset.",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "America/St_Johns"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 417.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_distractor_01",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "distractor",
+      "prompt": "I just flew from Los Angeles to Chicago. What time is it here in Chicago?",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "America/Chicago"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 446.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "timezone_distractor_02",
+      "tool_name": "get_time_in_timezone",
+      "complexity": "simple",
+      "test_type": "distractor",
+      "prompt": "我之前在纽约出差，现在回到了台北，帮我看看这边现在几点。",
+      "actual_tool_name": "get_time_in_timezone",
+      "actual_parameters": {
+        "timezone": "Asia/Taipei"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 399.5,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_direct_01",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Search for wireless headphones in the electronics category.",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "electronics",
+        "query": "wireless headphones"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 396.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_direct_02",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "在食品分类里搜索有机绿茶",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "food",
+        "query": "有机绿茶"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 466.6,
+      "missing_params": [],
+      "wrong_params": {
+        "query": {
+          "expected": "organic green tea",
+          "actual": "有机绿茶"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_direct_03",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Find me science fiction books, sort by rating.",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "books",
+        "query": "science fiction",
+        "sort_by": "rating"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 504.7,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_direct_04",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Search for winter jackets in clothing, max price $200, sort by price.",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "clothing",
+        "max_price": 200,
+        "query": "winter jackets",
+        "sort_by": "price"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 613.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_direct_05",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "帮我在电子产品里搜索机械键盘，价格不要超过150。",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "electronics",
+        "max_price": 150,
+        "query": "机械键盘"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 518.0,
+      "missing_params": [],
+      "wrong_params": {
+        "query": {
+          "expected": "mechanical keyboard",
+          "actual": "机械键盘"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_inference_01",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "I need something to read on my flight — maybe a good thriller, nothing over $15.",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "books",
+        "max_price": 15,
+        "query": "thriller",
+        "sort_by": "relevance"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 608.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [
+        "sort_by"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "products_inference_02",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "我想买条牛仔裤，预算300以内，最好按评分排序。",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "clothing",
+        "max_price": 300,
+        "query": "牛仔裤",
+        "sort_by": "rating"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 573.6,
+      "missing_params": [],
+      "wrong_params": {
+        "query": {
+          "expected": "jeans",
+          "actual": "牛仔裤"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_inference_03",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "What are the best-rated protein bars you have?",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "food",
+        "query": "protein bars",
+        "sort_by": "rating"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 468.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_inference_04",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "I need a gift for a kid who loves robots — something electronic under $50.",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "electronics",
+        "max_price": 50,
+        "query": "robot toy",
+        "sort_by": "relevance"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 458.8,
+      "missing_params": [],
+      "wrong_params": {
+        "query": {
+          "expected": "robots",
+          "actual": "robot toy"
+        }
+      },
+      "extra_params": [
+        "sort_by"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "products_inference_05",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "帮我找最便宜的瑜伽裤",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "clothing",
+        "query": "瑜伽裤",
+        "sort_by": "price"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 404.4,
+      "missing_params": [],
+      "wrong_params": {
+        "query": {
+          "expected": "yoga pants",
+          "actual": "瑜伽裤"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_edge_01",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "Search electronics for USB-C hub under $0.99.",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "electronics",
+        "max_price": 0.99,
+        "query": "USB-C hub"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 420.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_edge_02",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "Find books with the query '' — just show me everything, sorted by relevance.",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "books",
+        "query": "",
+        "sort_by": "relevance"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 399.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_edge_03",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "在食品分类搜索「辣条」，价格上限999999",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "food",
+        "max_price": 999999,
+        "query": "辣条"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 449.6,
+      "missing_params": [],
+      "wrong_params": {
+        "query": {
+          "expected": "spicy strips",
+          "actual": "辣条"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_distractor_01",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "distractor",
+      "prompt": "I was looking at clothing earlier but actually I need to search for a laptop stand in electronics.",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "electronics",
+        "query": "laptop stand"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 404.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "products_distractor_02",
+      "tool_name": "search_products",
+      "complexity": "medium",
+      "test_type": "distractor",
+      "prompt": "我朋友推荐了一本烹饪书，但我其实想找的是食品类的巧克力，帮我搜搜看。",
+      "actual_tool_name": "search_products",
+      "actual_parameters": {
+        "category": "food",
+        "query": "巧克力"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 515.4,
+      "missing_params": [],
+      "wrong_params": {
+        "query": {
+          "expected": "chocolate",
+          "actual": "巧克力"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_direct_01",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Send an email to alice@example.com with the subject 'Meeting Tomorrow' and body 'Hi Alice, can we meet at 2pm tomorrow? Thanks.'",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "Hi Alice, can we meet at 2pm tomorrow? Thanks.",
+        "subject": "Meeting Tomorrow",
+        "to": "alice@example.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 717.3,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_direct_02",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "给 zhang@company.cn 发邮件，主题「项目进度更新」，内容：本周已完成80%的开发任务，预计下周五上线。",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "本周已完成80%的开发任务，预计下周五上线。",
+        "subject": "项目进度更新",
+        "to": "zhang@company.cn"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 921.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_direct_03",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Email bob@work.com, subject: 'Q3 Report', body: 'Please find the Q3 report attached.', CC to manager@work.com and lead@work.com, high priority.",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "Please find the Q3 report attached.",
+        "cc": [
+          "manager@work.com",
+          "lead@work.com"
+        ],
+        "priority": "high",
+        "subject": "Q3 Report",
+        "to": "bob@work.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1030.8,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_direct_04",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Send a low priority email to hr@company.com, subject 'Vacation Request', body 'I would like to request PTO from April 15-22.'",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "I would like to request PTO from April 15-22.",
+        "priority": "low",
+        "subject": "Vacation Request",
+        "to": "hr@company.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 693.7,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_direct_05",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "发封邮件到 li@tech.com，主题是「面试邀请」，正文：您好，诚邀您参加我们的技术面试，时间为4月15日下午3点。抄送 recruiter@tech.com。",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "您好，诚邀您参加我们的技术面试，时间为4月15日下午3点。",
+        "cc": [
+          "recruiter@tech.com"
+        ],
+        "subject": "面试邀请",
+        "to": "li@tech.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 733.7,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_inference_01",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "Shoot a quick note to sarah@team.io letting her know the deadline is pushed to Friday. Keep it urgent.",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "The deadline has been pushed to Friday. Please prioritize this!",
+        "priority": "high",
+        "subject": "URGENT: Deadline Update",
+        "to": "sarah@team.io"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 714.9,
+      "missing_params": [],
+      "wrong_params": {
+        "subject": {
+          "expected": "Deadline Update",
+          "actual": "URGENT: Deadline Update"
+        },
+        "body": {
+          "expected": "Hi Sarah, the deadline has been pushed to Friday.",
+          "actual": "The deadline has been pushed to Friday. Please prioritize this!"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_inference_02",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "给客户 wang@client.com 写封感谢信，感谢他们选择了我们的服务。",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "尊敬的客户，\n\n感谢您选择我们的服务！我们非常荣幸能为您提供支持。如果您有任何疑问或需要进一步的帮助，请随时与我们联系。\n\n祝您生活愉快！\n\n此致，\n[您的姓名/公司名称]",
+        "subject": "感谢您选择我们的服务",
+        "to": "wang@client.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 923.9,
+      "missing_params": [],
+      "wrong_params": {
+        "subject": {
+          "expected": "Thank You",
+          "actual": "感谢您选择我们的服务"
+        },
+        "body": {
+          "expected": "感谢您选择了我们的服务。",
+          "actual": "尊敬的客户，\n\n感谢您选择我们的服务！我们非常荣幸能为您提供支持。如果您有任何疑问或需要进一步的帮助，请随时与我们联系。\n\n祝您生活愉快！\n\n此致，\n[您的姓名/公司名称]"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_inference_03",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "Remind john@dev.com about the code review. It's not super urgent, low priority is fine.",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "Hi John, this is a friendly reminder about the code review.",
+        "priority": "low",
+        "subject": "Reminder: Code Review",
+        "to": "john@dev.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 721.4,
+      "missing_params": [],
+      "wrong_params": {
+        "subject": {
+          "expected": "Code Review Reminder",
+          "actual": "Reminder: Code Review"
+        },
+        "body": {
+          "expected": "Hi John, just a reminder about the pending code review.",
+          "actual": "Hi John, this is a friendly reminder about the code review."
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_inference_04",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "Draft an email to the whole marketing team (marketing@co.com) announcing the product launch next Monday. Loop in the CEO at ceo@co.com.",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "Hi Marketing Team,\n\nI'm excited to announce that our new product launch is happening next Monday! This is a major milestone for us, and I want to thank everyone for their hard work in getting us to this point.\n\nLet's make this a huge success!\n\nBest regards,",
+        "cc": [
+          "ceo@co.com"
+        ],
+        "subject": "Product Launch Announcement",
+        "to": "marketing@co.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1122.7,
+      "missing_params": [],
+      "wrong_params": {
+        "body": {
+          "expected": "The product launch is scheduled for next Monday.",
+          "actual": "Hi Marketing Team,\n\nI'm excited to announce that our new product launch is happening next Monday! This is a major milestone for us, and I want to thank everyone for their hard work in getting us to this point.\n\nLet's make this a huge success!\n\nBest regards,"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_inference_05",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "紧急！给 ops@server.com 发邮件说服务器宕机了，需要立即修复。",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "服务器宕机了，需要立即修复。",
+        "priority": "high",
+        "subject": "紧急：服务器宕机",
+        "to": "ops@server.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 828.6,
+      "missing_params": [],
+      "wrong_params": {
+        "subject": {
+          "expected": "Server Down - Urgent",
+          "actual": "紧急：服务器宕机"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_edge_01",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "Send an email to user+tag@example.com with subject 'Test' and body 'Testing plus addressing.'",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "Testing plus addressing.",
+        "subject": "Test",
+        "to": "user+tag@example.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 505.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_edge_02",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "Email dev@company.com, subject: 'Bug #1234: NullPointerException in line 42', body: 'See stack trace below:\\nException at Main.java:42\\n  at Service.java:88'. CC to qa@company.com, triage@company.com, and pm@company.com.",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "See stack trace below:\nException at Main.java:42\n  at Service.java:88",
+        "cc": [
+          "qa@company.com",
+          "triage@company.com",
+          "pm@company.com"
+        ],
+        "subject": "Bug #1234: NullPointerException in line 42",
+        "to": "dev@company.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1169.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_edge_03",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "发邮件给 test@example.com，主题就一个字「急」，内容也一个字「来」，优先级高。",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "来",
+        "priority": "high",
+        "subject": "急",
+        "to": "test@example.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 533.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_distractor_01",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "distractor",
+      "prompt": "I already emailed karen@old.com about this, but actually can you send a new email to mike@new.com with subject 'Updated Proposal' and body 'Here is the revised proposal.'",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "Here is the revised proposal.",
+        "subject": "Updated Proposal",
+        "to": "mike@new.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 519.3,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "email_distractor_02",
+      "tool_name": "send_email",
+      "complexity": "medium",
+      "test_type": "distractor",
+      "prompt": "我本来想给 boss@work.com 发邮件的，但算了，还是给 assistant@work.com 发吧。主题「会议纪要」，内容「请查收今天的会议纪要」。",
+      "actual_tool_name": "send_email",
+      "actual_parameters": {
+        "body": "请查收今天的会议纪要",
+        "subject": "会议纪要",
+        "to": "assistant@work.com"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 641.8,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_direct_01",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Book a table at The Italian Place for 2026-04-15 at 19:00 for 4 people.",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-15",
+        "party_size": 4,
+        "restaurant_name": "The Italian Place",
+        "time": "19:00"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 822.7,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_direct_02",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "预订「鼎泰丰」，2026年4月20日，晚上6点半，3个人。",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-20",
+        "party_size": 3,
+        "restaurant_name": "鼎泰丰",
+        "time": "18:30"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 683.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_direct_03",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Reserve at Sushi Zen on 2026-05-01 at 12:30 for 2 guests. One person has a nut allergy.",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-05-01",
+        "party_size": 2,
+        "restaurant_name": "Sushi Zen",
+        "special_requests": "One person has a nut allergy.",
+        "time": "12:30"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 743.0,
+      "missing_params": [],
+      "wrong_params": {
+        "special_requests": {
+          "expected": "Nut allergy",
+          "actual": "One person has a nut allergy."
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_direct_04",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Book Chez Marie, April 18 2026, 20:00, party of 6, we need a high chair for a toddler.",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-18",
+        "party_size": 6,
+        "restaurant_name": "Chez Marie",
+        "special_requests": "high chair for a toddler",
+        "time": "20:00"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 0.0,
+      "response_time_ms": 1023.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_direct_05",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "帮我订「海底捞」，2026年5月10日中午12点，8个人，需要一个包间。",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-05-10",
+        "party_size": 8,
+        "restaurant_name": "海底捞",
+        "special_requests": "需要一个包间",
+        "time": "12:00"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 0.0,
+      "response_time_ms": 922.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_inference_01",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "My wife and I want to have dinner at Olive Garden this Saturday evening. Today is Wednesday April 8, 2026.",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-11",
+        "party_size": 2,
+        "restaurant_name": "Olive Garden",
+        "time": "19:00"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 840.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_inference_02",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "我们一家五口想明天中午去全聚德吃烤鸭。今天是2026年4月9号。",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-10",
+        "party_size": 5,
+        "restaurant_name": "全聚德",
+        "time": "12:00"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 669.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_inference_03",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "I want to take my team of 10 out for a celebratory lunch at Nobu next Friday. We'll need a private area. Today is Monday April 6, 2026.",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-12",
+        "party_size": 10,
+        "restaurant_name": "Nobu",
+        "special_requests": "Private area requested for a celebratory team lunch.",
+        "time": "12:00"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 0.0,
+      "response_time_ms": 794.5,
+      "missing_params": [],
+      "wrong_params": {
+        "date": {
+          "expected": "2026-04-10",
+          "actual": "2026-04-12"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_inference_04",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "Brunch at Café Luna for me and two friends, the day after tomorrow at around 10:30. Today is April 9, 2026.",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-11",
+        "party_size": 3,
+        "restaurant_name": "Café Luna",
+        "time": "10:30"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 669.5,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_inference_05",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "下周二晚上7点半帮我订外婆家，就我一个人。我是素食主义者。今天是2026年4月9日。",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-14",
+        "party_size": 1,
+        "restaurant_name": "外婆家",
+        "special_requests": "素食主义者",
+        "time": "19:30"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 0.0,
+      "response_time_ms": 696.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_edge_01",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "Book a table for 1 person at The Solo Diner on 2026-12-31 at 23:45.",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-12-31",
+        "party_size": 1,
+        "restaurant_name": "The Solo Diner",
+        "time": "23:45"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 609.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_edge_02",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "预订「麦当劳 (朝阳路店)」，2026-04-15，上午6:00，2个人。",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-15",
+        "party_size": 2,
+        "restaurant_name": "麦当劳 (朝阳路店)",
+        "time": "06:00"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 737.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_edge_03",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "Reserve at Le Château for 20 guests on 2026-06-15 at 18:00. We need wheelchair accessibility, a cake brought in, and a vegan menu option.",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-06-15",
+        "party_size": 20,
+        "restaurant_name": "Le Château",
+        "special_requests": "Wheelchair accessibility, cake brought in, and a vegan menu option.",
+        "time": "18:00"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 922.1,
+      "missing_params": [],
+      "wrong_params": {
+        "special_requests": {
+          "expected": "Wheelchair accessibility, cake brought in, vegan menu option",
+          "actual": "Wheelchair accessibility, cake brought in, and a vegan menu option."
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_distractor_01",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "distractor",
+      "prompt": "We tried to book at Momofuku last week but it was full. This time, book The Red Dragon for April 20, 2026, at 7pm for 4.",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-20",
+        "party_size": 4,
+        "restaurant_name": "The Red Dragon",
+        "time": "19:00"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 715.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "restaurant_distractor_02",
+      "tool_name": "book_restaurant",
+      "complexity": "medium",
+      "test_type": "distractor",
+      "prompt": "我之前在小龙坎吃过，味道不错，但这次想订大龙燚，2026-04-25晚上7点，6个人。",
+      "actual_tool_name": "book_restaurant",
+      "actual_parameters": {
+        "date": "2026-04-25",
+        "party_size": 6,
+        "restaurant_name": "大龙燚",
+        "time": "19:00"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 719.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_direct_01",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Calculate the monthly payment for a $250,000 loan at 6.5% annual rate over 360 months.",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 6.5,
+        "principal": 250000,
+        "term_months": 360
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 610.8,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_direct_02",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "计算一下贷款50万，年利率4.9%，期限240个月的月供。",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 4.9,
+        "principal": 500000,
+        "term_months": 240
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 615.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_direct_03",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "Loan calculation: $30,000 at 3.2% for 60 months with $100 extra payment per month.",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 3.2,
+        "extra_monthly_payment": 100,
+        "principal": 30000,
+        "term_months": 60
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 714.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_direct_04",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "What's the monthly payment on a $15,000 loan at 7% for 48 months?",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 7,
+        "principal": 15000,
+        "term_months": 48
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 615.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_direct_05",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "direct",
+      "prompt": "贷款100万，年利率3.85%，360个月，每月额外还款500元。",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 3.85,
+        "extra_monthly_payment": 500,
+        "principal": 1000000,
+        "term_months": 360
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 574.5,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_inference_01",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "I want to buy a $400,000 house with 20% down. The mortgage rate is 5.75% for a 30-year term. What's my monthly payment?",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 5.75,
+        "principal": 320000,
+        "term_months": 360
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 553.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_inference_02",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "我要买一辆20万的车，首付30%，贷款年利率4.5%，分5年还清。月供多少？",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 4.5,
+        "principal": 140000,
+        "term_months": 60
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 542.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_inference_03",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "I'm taking out a two-year personal loan for $10,000 at 9.99%. Can I save time if I pay an extra $50 each month?",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 9.99,
+        "extra_monthly_payment": 50,
+        "principal": 10000,
+        "term_months": 24
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 555.6,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_inference_04",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "Student loan of fifty thousand dollars, rate is 4 and a quarter percent, 10 year repayment.",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 4.25,
+        "principal": 50000,
+        "term_months": 120
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 540.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_inference_05",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "inference",
+      "prompt": "打算贷款装修房子，需要15万，银行给的利率是5.6%，还3年，打算每月多还200。",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 5.6,
+        "extra_monthly_payment": 200,
+        "principal": 150000,
+        "term_months": 36
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 554.3,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_edge_01",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "Calculate loan for $1,000 at 0% interest for 12 months.",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 0,
+        "principal": 1000,
+        "term_months": 12
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 598.3,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_edge_02",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "Loan payment for $500,000 at 24.99% APR for 1 month.",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 24.99,
+        "principal": 500000,
+        "term_months": 1
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 598.7,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_edge_03",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "edge",
+      "prompt": "贷款100元，利率0.01%，期限1个月。",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 0.01,
+        "principal": 100,
+        "term_months": 1
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 464.5,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_distractor_01",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "distractor",
+      "prompt": "I was comparing 15-year and 30-year mortgages. Let's go with the 30-year. $300,000 at 6%.",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 6,
+        "principal": 300000,
+        "term_months": 360
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 547.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "loan_distractor_02",
+      "tool_name": "calculate_loan",
+      "complexity": "medium",
+      "test_type": "distractor",
+      "prompt": "我听说有的银行利率只有3%，但我这边拿到的是4.2%。帮我算算20万贷24个月的月供吧。",
+      "actual_tool_name": "calculate_loan",
+      "actual_parameters": {
+        "annual_rate": 4.2,
+        "principal": 200000,
+        "term_months": 24
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 430.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_direct_01",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "Create a calendar event titled 'Sprint Planning' from 2026-04-15T09:00:00 to 2026-04-15T10:00:00 with attendees alice@co.com and bob@co.com.",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "alice@co.com",
+          "bob@co.com"
+        ],
+        "end_time": "2026-04-15T10:00:00",
+        "start_time": "2026-04-15T09:00:00",
+        "title": "Sprint Planning"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1001.3,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_direct_02",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "创建日历事件「周会」，时间2026-04-14T14:00:00到2026-04-14T15:00:00，参与者：wang@team.com, li@team.com, zhang@team.com，地点：会议室A。",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "wang@team.com",
+          "li@team.com",
+          "zhang@team.com"
+        ],
+        "end_time": "2026-04-14T15:00:00",
+        "location": "会议室A",
+        "start_time": "2026-04-14T14:00:00",
+        "title": "周会"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1228.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_direct_03",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "Schedule 'Team Standup' from 2026-04-13T09:30:00 to 2026-04-13T09:45:00 with dev@co.com. Repeat weekly until 2026-06-30.",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "dev@co.com"
+        ],
+        "end_time": "2026-04-13T09:45:00",
+        "recurrence": {
+          "frequency": "weekly",
+          "until": "2026-06-30"
+        },
+        "start_time": "2026-04-13T09:30:00",
+        "title": "Team Standup"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1217.8,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_direct_04",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "Create event: 'Board Meeting', 2026-05-01T10:00:00 to 2026-05-01T12:00:00, attendees: ceo@corp.com, cfo@corp.com, cto@corp.com. Location: Boardroom 1. Recurs monthly, every 3 months, until 2027-05-01.",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "ceo@corp.com",
+          "cfo@corp.com",
+          "cto@corp.com"
+        ],
+        "end_time": "2026-05-01T12:00:00",
+        "location": "Boardroom 1",
+        "recurrence": {
+          "frequency": "monthly",
+          "interval": 3,
+          "until": "2027-05-01"
+        },
+        "start_time": "2026-05-01T10:00:00",
+        "title": "Board Meeting"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1333.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_direct_05",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "新建日历事件「每日站会」，2026-04-10T08:00:00到2026-04-10T08:15:00，参会：team@dev.com。每天重复。",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "team@dev.com"
+        ],
+        "end_time": "2026-04-10T08:15:00",
+        "recurrence": {
+          "frequency": "daily"
+        },
+        "start_time": "2026-04-10T08:00:00",
+        "title": "每日站会"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 922.5,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_inference_01",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "Set up a one-hour lunch meeting with sarah@work.com next Tuesday at noon. We'll meet at the café downstairs. Today is April 9, 2026.",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "sarah@work.com"
+        ],
+        "end_time": "2026-04-14T13:00:00",
+        "location": "the café downstairs",
+        "start_time": "2026-04-14T12:00:00",
+        "title": "Lunch Meeting with Sarah"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 0.0,
+      "response_time_ms": 1365.3,
+      "missing_params": [],
+      "wrong_params": {
+        "title": {
+          "expected": "Lunch Meeting",
+          "actual": "Lunch Meeting with Sarah"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_inference_02",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "每周五下午3点到4点跟mentor@uni.edu开论文指导会，从这周开始到学期末（2026-06-30）。今天是2026年4月9日。",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "mentor@uni.edu"
+        ],
+        "end_time": "2026-04-09T16:00:00",
+        "recurrence": {
+          "frequency": "weekly",
+          "interval": 1,
+          "until": "2026-06-30"
+        },
+        "start_time": "2026-04-09T15:00:00",
+        "title": "论文指导会"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1150.7,
+      "missing_params": [],
+      "wrong_params": {
+        "start_time": {
+          "expected": "2026-04-10T15:00:00",
+          "actual": "2026-04-09T15:00:00"
+        },
+        "end_time": {
+          "expected": "2026-04-10T16:00:00",
+          "actual": "2026-04-09T16:00:00"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_inference_03",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "Block 2 hours tomorrow morning starting at 9 for a deep work session. Add just myself (me@work.com). No interruptions — put 'Focus Time' as the title. Today is April 9, 2026.",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "me@work.com"
+        ],
+        "end_time": "2026-04-10T11:00:00",
+        "start_time": "2026-04-10T09:00:00",
+        "title": "Focus Time"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 883.8,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_inference_04",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "Plan a biweekly 1-on-1 with my manager (mgr@company.com) every other Monday at 10am for 30 minutes starting April 13, 2026.",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "mgr@company.com"
+        ],
+        "end_time": "2026-04-13T10:30:00",
+        "recurrence": {
+          "frequency": "weekly",
+          "interval": 2
+        },
+        "start_time": "2026-04-13T10:00:00",
+        "title": "1-on-1 with Manager"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1111.6,
+      "missing_params": [],
+      "wrong_params": {
+        "title": {
+          "expected": "1-on-1",
+          "actual": "1-on-1 with Manager"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_inference_05",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "明天下午2点到3点半，在3楼大会议室跟sales@co.com和marketing@co.com开产品发布会策划会。今天是2026年4月9日。",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "sales@co.com",
+          "marketing@co.com"
+        ],
+        "end_time": "2026-04-10T15:30:00",
+        "location": "3楼大会议室",
+        "start_time": "2026-04-10T14:00:00",
+        "title": "产品发布会策划会"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1034.3,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_edge_01",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "edge",
+      "prompt": "Create an all-day event 'Company Holiday' on 2026-12-25 from 2026-12-25T00:00:00 to 2026-12-25T23:59:59 with attendees all@company.com.",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "all@company.com"
+        ],
+        "end_time": "2026-12-25T23:59:59",
+        "start_time": "2026-12-25T00:00:00",
+        "title": "Company Holiday"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1118.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_edge_02",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "edge",
+      "prompt": "Schedule 'Yearly Review' on 2026-04-15T09:00:00 to 2026-04-15T17:00:00 with a@co.com, b@co.com, c@co.com, d@co.com, e@co.com, f@co.com, g@co.com, h@co.com, i@co.com, j@co.com. Recurs yearly.",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "a@co.com",
+          "b@co.com",
+          "c@co.com",
+          "d@co.com",
+          "e@co.com",
+          "f@co.com",
+          "g@co.com",
+          "h@co.com",
+          "i@co.com",
+          "j@co.com"
+        ],
+        "end_time": "2026-04-15T17:00:00",
+        "recurrence": {
+          "frequency": "yearly"
+        },
+        "start_time": "2026-04-15T09:00:00",
+        "title": "Yearly Review"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1739.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_edge_03",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "edge",
+      "prompt": "创建一个只有15分钟的事件「快速同步」，2026-04-10T17:45:00到2026-04-10T18:00:00，参会者 cto@startup.io。",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "cto@startup.io"
+        ],
+        "end_time": "2026-04-10T18:00:00",
+        "start_time": "2026-04-10T17:45:00",
+        "title": "快速同步"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 923.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_distractor_01",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "distractor",
+      "prompt": "I had a meeting with jake@old.com last week but that's done. Now create a new event 'Design Review' on 2026-04-16 from 14:00 to 15:00 with nina@design.com at Studio B.",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "nina@design.com"
+        ],
+        "end_time": "2026-04-16T15:00:00",
+        "location": "Studio B",
+        "start_time": "2026-04-16T14:00:00",
+        "title": "Design Review"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1110.7,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "calendar_distractor_02",
+      "tool_name": "create_calendar_event",
+      "complexity": "complex",
+      "test_type": "distractor",
+      "prompt": "之前跟 old@team.com 的周会取消了。现在帮我建一个新的「技术评审」，2026-04-17T10:00:00到11:00:00，参与者 new@team.com 和 lead@team.com。",
+      "actual_tool_name": "create_calendar_event",
+      "actual_parameters": {
+        "attendees": [
+          "new@team.com",
+          "lead@team.com"
+        ],
+        "end_time": "2026-04-17T11:00:00",
+        "start_time": "2026-04-17T10:00:00",
+        "title": "技术评审"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1044.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_direct_01",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "Search for flights from JFK to LAX on 2026-05-01, 1 adult, economy class.",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "economy",
+        "departure_date": "2026-05-01",
+        "destination": "LAX",
+        "origin": "JFK",
+        "passengers": {
+          "adults": 1
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 616.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_direct_02",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "搜索从PEK到NRT的航班，2026年5月10日出发，2个成人1个小孩，商务舱，5月17日返回。",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "business",
+        "departure_date": "2026-05-10",
+        "destination": "NRT",
+        "origin": "PEK",
+        "passengers": {
+          "adults": 2,
+          "children": 1
+        },
+        "return_date": "2026-05-17"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 808.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_direct_03",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "Find flights LHR to CDG, 2026-04-20, 2 adults, premium economy, nonstop only.",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "premium_economy",
+        "departure_date": "2026-04-20",
+        "destination": "CDG",
+        "max_stops": 0,
+        "origin": "LHR",
+        "passengers": {
+          "adults": 2
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 824.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_direct_04",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "Flights from SFO to SIN on 2026-06-15, returning 2026-06-30. 1 adult and 1 infant. First class. Max 1 stop.",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "first",
+        "departure_date": "2026-06-15",
+        "destination": "SIN",
+        "max_stops": 1,
+        "origin": "SFO",
+        "passengers": {
+          "adults": 1,
+          "infants": 1
+        },
+        "return_date": "2026-06-30"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 814.2,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_direct_05",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "查一下从PVG到ICN的航班，2026年4月25日，3个成人2个儿童，经济舱。",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "economy",
+        "departure_date": "2026-04-25",
+        "destination": "ICN",
+        "origin": "PVG",
+        "passengers": {
+          "adults": 3,
+          "children": 2
+        },
+        "return_date": ""
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 680.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [
+        "return_date"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "flights_inference_01",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "My wife and I want to fly from New York to London for a week starting May 5, 2026. Business class please.",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "business",
+        "departure_date": "2026-05-05",
+        "destination": "LHR",
+        "origin": "JFK",
+        "passengers": {
+          "adults": 2
+        },
+        "return_date": "2026-05-12"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1161.8,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_inference_02",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "我们一家三口（两大一小）想从上海飞东京玩，五一出发五月五号回来，经济舱就行，最好直飞。",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "economy",
+        "departure_date": "2025-05-01",
+        "destination": "HND",
+        "max_stops": 0,
+        "origin": "PVG",
+        "passengers": {
+          "adults": 2,
+          "children": 1
+        },
+        "return_date": "2025-05-05"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1025.5,
+      "missing_params": [],
+      "wrong_params": {
+        "destination": {
+          "expected": "NRT",
+          "actual": "HND"
+        },
+        "departure_date": {
+          "expected": "2026-05-01",
+          "actual": "2025-05-01"
+        },
+        "return_date": {
+          "expected": "2026-05-05",
+          "actual": "2025-05-05"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_inference_03",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "I need to get from San Francisco to Tokyo next Monday for a business trip. Just me, and I need to work on the plane so a premium cabin would be great. Today is April 9, 2026.",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "business",
+        "departure_date": "2026-04-13",
+        "destination": "HND",
+        "origin": "SFO",
+        "passengers": {
+          "adults": 1
+        },
+        "return_date": "2026-04-20"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 831.8,
+      "missing_params": [],
+      "wrong_params": {
+        "destination": {
+          "expected": "NRT",
+          "actual": "HND"
+        }
+      },
+      "extra_params": [
+        "return_date"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "flights_inference_04",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "Family vacation! Me, my spouse, our 8-year-old, and our baby. Flying from Chicago to Cancun on June 20, back on June 27. Economy is fine, but no more than one layover.",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "economy",
+        "departure_date": "2025-06-20",
+        "destination": "CUN",
+        "max_stops": 1,
+        "origin": "ORD",
+        "passengers": {
+          "adults": 2,
+          "children": 1,
+          "infants": 1
+        },
+        "return_date": "2025-06-27"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1013.4,
+      "missing_params": [],
+      "wrong_params": {
+        "departure_date": {
+          "expected": "2026-06-20",
+          "actual": "2025-06-20"
+        },
+        "return_date": {
+          "expected": "2026-06-27",
+          "actual": "2025-06-27"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_inference_05",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "下个月15号我一个人从北京飞新加坡出差，头等舱，不要转机。",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "first",
+        "departure_date": "2025-06-15",
+        "destination": "SIN",
+        "max_stops": 0,
+        "origin": "PEK",
+        "passengers": {
+          "adults": 1
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1224.1,
+      "missing_params": [],
+      "wrong_params": {
+        "departure_date": {
+          "expected": "2026-05-15",
+          "actual": "2025-06-15"
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_edge_01",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "edge",
+      "prompt": "Search flights from LAX to LAX on 2026-05-01, 1 adult, economy. I know it sounds weird, it's a scenic flight.",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "economy",
+        "departure_date": "2026-05-01",
+        "destination": "LAX",
+        "origin": "LAX",
+        "passengers": {
+          "adults": 1
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 718.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_edge_02",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "edge",
+      "prompt": "Flights from DXB to MLE for 4 adults, 3 children, and 2 infants on 2026-07-01, economy, returning 2026-07-08.",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "economy",
+        "departure_date": "2026-07-01",
+        "destination": "MLE",
+        "origin": "DXB",
+        "passengers": {
+          "adults": 4,
+          "children": 3,
+          "infants": 2
+        },
+        "return_date": "2026-07-08"
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 941.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_edge_03",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "edge",
+      "prompt": "搜一下2026年12月31日从HND到TPE的航班，1个成人，经济舱，最多转2次。",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "economy",
+        "departure_date": "2026-12-31",
+        "destination": "TPE",
+        "max_stops": 2,
+        "origin": "HND",
+        "passengers": {
+          "adults": 1
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 762.4,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_distractor_01",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "distractor",
+      "prompt": "Last time I flew from Miami to New York it was terrible. This time search from MIA to SEA, May 20, 2026, 1 adult, economy.",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "economy",
+        "departure_date": "2026-05-20",
+        "destination": "SEA",
+        "origin": "MIA",
+        "passengers": {
+          "adults": 1
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 676.7,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "flights_distractor_02",
+      "tool_name": "search_flights",
+      "complexity": "complex",
+      "test_type": "distractor",
+      "prompt": "我本来想飞广州的，但改主意了。帮我搜从CAN到KUL的航班，2026年6月1号，2个成人，商务舱。",
+      "actual_tool_name": "search_flights",
+      "actual_parameters": {
+        "cabin_class": "business",
+        "departure_date": "2026-06-01",
+        "destination": "KUL",
+        "origin": "CAN",
+        "passengers": {
+          "adults": 2
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 657.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_direct_01",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "Place an order for product SKU-001, quantity 2, ship to 123 Main St, Springfield, 62704, US, IL. Pay with credit card.",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "items": [
+          {
+            "product_id": "SKU-001",
+            "quantity": 2
+          }
+        ],
+        "payment_method": "credit_card",
+        "shipping_address": {
+          "city": "Springfield",
+          "country": "US",
+          "state": "IL",
+          "street": "123 Main St",
+          "zip": "62704"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 901.1,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_direct_02",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "下单：商品PROD-100，数量1，蓝色，L码。收货地址：北京市朝阳区建国路88号，邮编100022，中国。用PayPal支付。",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "items": [
+          {
+            "options": {
+              "color": "蓝色",
+              "size": "L码"
+            },
+            "product_id": "PROD-100",
+            "quantity": 1
+          }
+        ],
+        "payment_method": "paypal",
+        "shipping_address": {
+          "city": "北京市朝阳区",
+          "country": "中国",
+          "street": "建国路88号",
+          "zip": "100022"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 974.6,
+      "missing_params": [],
+      "wrong_params": {
+        "items": {
+          "expected": [
+            {
+              "product_id": "PROD-100",
+              "quantity": 1,
+              "options": {
+                "color": "blue",
+                "size": "L"
+              }
+            }
+          ],
+          "actual": [
+            {
+              "options": {
+                "color": "蓝色",
+                "size": "L码"
+              },
+              "product_id": "PROD-100",
+              "quantity": 1
+            }
+          ]
+        },
+        "shipping_address": {
+          "expected": {
+            "street": "朝阳区建国路88号",
+            "city": "Beijing",
+            "zip": "100022",
+            "country": "CN"
+          },
+          "actual": {
+            "city": "北京市朝阳区",
+            "country": "中国",
+            "street": "建国路88号",
+            "zip": "100022"
+          }
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_direct_03",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "Order: 3x ITEM-A (red, medium) and 1x ITEM-B (black, XL). Ship to 456 Oak Ave, Portland, 97201, US, OR. Pay by debit card. Coupon code: SAVE10.",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "coupon_code": "SAVE10",
+        "items": [
+          {
+            "options": {
+              "color": "red",
+              "size": "medium"
+            },
+            "product_id": "ITEM-A",
+            "quantity": 3
+          },
+          {
+            "options": {
+              "color": "black",
+              "size": "XL"
+            },
+            "product_id": "ITEM-B",
+            "quantity": 1
+          }
+        ],
+        "payment_method": "debit_card",
+        "shipping_address": {
+          "city": "Portland",
+          "country": "US",
+          "state": "OR",
+          "street": "456 Oak Ave",
+          "zip": "97201"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1256.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_direct_04",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "Create an order: product SHOE-42, quantity 1, size 10, color white. Shipping: 10 Downing St, London, SW1A 2AA, UK. Bank transfer payment.",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "items": [
+          {
+            "options": {
+              "color": "white",
+              "size": "10"
+            },
+            "product_id": "SHOE-42",
+            "quantity": 1
+          }
+        ],
+        "payment_method": "bank_transfer",
+        "shipping_address": {
+          "city": "London",
+          "country": "UK",
+          "street": "10 Downing St",
+          "zip": "SW1A 2AA"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 897.5,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_direct_05",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "direct",
+      "prompt": "下单购买：BOOK-789 数量5，BOOK-456 数量2。邮寄到上海市浦东新区张江路100号，邮编201203，中国。信用卡支付。优惠码READER20。",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "coupon_code": "READER20",
+        "items": [
+          {
+            "product_id": "BOOK-789",
+            "quantity": 5
+          },
+          {
+            "product_id": "BOOK-456",
+            "quantity": 2
+          }
+        ],
+        "payment_method": "credit_card",
+        "shipping_address": {
+          "city": "上海市",
+          "country": "中国",
+          "state": "浦东新区",
+          "street": "张江路100号",
+          "zip": "201203"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1841.3,
+      "missing_params": [],
+      "wrong_params": {
+        "shipping_address": {
+          "expected": {
+            "street": "浦东新区张江路100号",
+            "city": "Shanghai",
+            "zip": "201203",
+            "country": "CN"
+          },
+          "actual": {
+            "city": "上海市",
+            "country": "中国",
+            "state": "浦东新区",
+            "street": "张江路100号",
+            "zip": "201203"
+          }
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_inference_01",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "I'd like to buy two pairs of the running shoes (product RS-200), one in size 9 black and one in size 11 white. Ship them to my apartment at 789 Elm Street, Austin TX 78701. I'll pay with my Visa.",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "items": [
+          {
+            "options": {
+              "color": "black",
+              "size": "9"
+            },
+            "product_id": "RS-200",
+            "quantity": 1
+          },
+          {
+            "options": {
+              "color": "white",
+              "size": "11"
+            },
+            "product_id": "RS-200",
+            "quantity": 1
+          }
+        ],
+        "payment_method": "credit_card",
+        "shipping_address": {
+          "city": "Austin",
+          "country": "USA",
+          "state": "TX",
+          "street": "789 Elm Street",
+          "zip": "78701"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1353.3,
+      "missing_params": [],
+      "wrong_params": {
+        "shipping_address": {
+          "expected": {
+            "street": "789 Elm Street",
+            "city": "Austin",
+            "zip": "78701",
+            "country": "US",
+            "state": "TX"
+          },
+          "actual": {
+            "city": "Austin",
+            "country": "USA",
+            "state": "TX",
+            "street": "789 Elm Street",
+            "zip": "78701"
+          }
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_inference_02",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "我要买3件T恤（TEE-01），分别要红色M、蓝色L和黑色XL。地址是广州市天河区体育西路50号，510620。用支付宝……哦不，这里没支付宝选项，那就PayPal吧。",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "items": [
+          {
+            "options": {
+              "color": "红色",
+              "size": "M"
+            },
+            "product_id": "TEE-01",
+            "quantity": 1
+          },
+          {
+            "options": {
+              "color": "蓝色",
+              "size": "L"
+            },
+            "product_id": "TEE-01",
+            "quantity": 1
+          },
+          {
+            "options": {
+              "color": "黑色",
+              "size": "XL"
+            },
+            "product_id": "TEE-01",
+            "quantity": 1
+          }
+        ],
+        "payment_method": "paypal",
+        "shipping_address": {
+          "city": "广州市",
+          "country": "中国",
+          "state": "广东省",
+          "street": "天河区体育西路50号",
+          "zip": "510620"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1439.3,
+      "missing_params": [],
+      "wrong_params": {
+        "items": {
+          "expected": [
+            {
+              "product_id": "TEE-01",
+              "quantity": 1,
+              "options": {
+                "color": "red",
+                "size": "M"
+              }
+            },
+            {
+              "product_id": "TEE-01",
+              "quantity": 1,
+              "options": {
+                "color": "blue",
+                "size": "L"
+              }
+            },
+            {
+              "product_id": "TEE-01",
+              "quantity": 1,
+              "options": {
+                "color": "black",
+                "size": "XL"
+              }
+            }
+          ],
+          "actual": [
+            {
+              "options": {
+                "color": "红色",
+                "size": "M"
+              },
+              "product_id": "TEE-01",
+              "quantity": 1
+            },
+            {
+              "options": {
+                "color": "蓝色",
+                "size": "L"
+              },
+              "product_id": "TEE-01",
+              "quantity": 1
+            },
+            {
+              "options": {
+                "color": "黑色",
+                "size": "XL"
+              },
+              "product_id": "TEE-01",
+              "quantity": 1
+            }
+          ]
+        },
+        "shipping_address": {
+          "expected": {
+            "street": "天河区体育西路50号",
+            "city": "Guangzhou",
+            "zip": "510620",
+            "country": "CN"
+          },
+          "actual": {
+            "city": "广州市",
+            "country": "中国",
+            "state": "广东省",
+            "street": "天河区体育西路50号",
+            "zip": "510620"
+          }
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_inference_03",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "Order a dozen of product WIDGET-X for the office. We're at 1000 Innovation Dr, San Jose, CA 95134. Put it on the company card. Oh, and I have a coupon: BULK15.",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "coupon_code": "BULK15",
+        "items": [
+          {
+            "product_id": "WIDGET-X",
+            "quantity": 12
+          }
+        ],
+        "payment_method": "credit_card",
+        "shipping_address": {
+          "city": "San Jose",
+          "country": "USA",
+          "state": "CA",
+          "street": "1000 Innovation Dr",
+          "zip": "95134"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 991.9,
+      "missing_params": [],
+      "wrong_params": {
+        "shipping_address": {
+          "expected": {
+            "street": "1000 Innovation Dr",
+            "city": "San Jose",
+            "zip": "95134",
+            "country": "US",
+            "state": "CA"
+          },
+          "actual": {
+            "city": "San Jose",
+            "country": "USA",
+            "state": "CA",
+            "street": "1000 Innovation Dr",
+            "zip": "95134"
+          }
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_inference_04",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "I want to send a gift — one CANDLE-SET (quantity 1) to my friend at Flat 4B, 22 Baker Street, London, W1U 3BW, United Kingdom. Pay via PayPal.",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "items": [
+          {
+            "product_id": "CANDLE-SET",
+            "quantity": 1
+          }
+        ],
+        "payment_method": "paypal",
+        "shipping_address": {
+          "city": "London",
+          "country": "United Kingdom",
+          "street": "Flat 4B, 22 Baker Street",
+          "zip": "W1U 3BW"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 818.8,
+      "missing_params": [],
+      "wrong_params": {
+        "shipping_address": {
+          "expected": {
+            "street": "Flat 4B, 22 Baker Street",
+            "city": "London",
+            "zip": "W1U 3BW",
+            "country": "UK"
+          },
+          "actual": {
+            "city": "London",
+            "country": "United Kingdom",
+            "street": "Flat 4B, 22 Baker Street",
+            "zip": "W1U 3BW"
+          }
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_inference_05",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "inference",
+      "prompt": "帮我下单半打（就是6个）MUG-CERAMIC，寄到深圳市南山区科技园路1号，518057。银行转账付款。",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "items": [
+          {
+            "product_id": "MUG-CERAMIC",
+            "quantity": 6
+          }
+        ],
+        "payment_method": "bank_transfer",
+        "shipping_address": {
+          "city": "深圳市",
+          "country": "中国",
+          "state": "广东省",
+          "street": "南山区科技园路1号",
+          "zip": "518057"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 922.0,
+      "missing_params": [],
+      "wrong_params": {
+        "shipping_address": {
+          "expected": {
+            "street": "南山区科技园路1号",
+            "city": "Shenzhen",
+            "zip": "518057",
+            "country": "CN"
+          },
+          "actual": {
+            "city": "深圳市",
+            "country": "中国",
+            "state": "广东省",
+            "street": "南山区科技园路1号",
+            "zip": "518057"
+          }
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_edge_01",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "edge",
+      "prompt": "Order 1 unit of PROD-SPECIAL with no color or size options. Ship to 1 A St, B, 00000, US. Credit card.",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "items": [
+          {
+            "product_id": "PROD-SPECIAL",
+            "quantity": 1
+          }
+        ],
+        "payment_method": "credit_card",
+        "shipping_address": {
+          "city": "B",
+          "country": "US",
+          "state": "",
+          "street": "1 A St",
+          "zip": "00000"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 737.0,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_edge_02",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "edge",
+      "prompt": "Place an order: 100x BULK-ITEM-1, 200x BULK-ITEM-2, 50x BULK-ITEM-3 (green, S). Ship to Warehouse 7, 500 Industrial Blvd, Detroit, 48201, US, MI. Bank transfer. Coupon: WHOLESALE50.",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "coupon_code": "WHOLESALE50",
+        "items": [
+          {
+            "product_id": "BULK-ITEM-1",
+            "quantity": 100
+          },
+          {
+            "product_id": "BULK-ITEM-2",
+            "quantity": 200
+          },
+          {
+            "options": {
+              "color": "green",
+              "size": "S"
+            },
+            "product_id": "BULK-ITEM-3",
+            "quantity": 50
+          }
+        ],
+        "payment_method": "bank_transfer",
+        "shipping_address": {
+          "city": "Detroit",
+          "country": "US",
+          "state": "MI",
+          "street": "Warehouse 7, 500 Industrial Blvd",
+          "zip": "48201"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1824.9,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_edge_03",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "edge",
+      "prompt": "下单1个GIFT-CARD-01，寄到香港九龙尖沙咀弥敦道100号，邮编999077，HK。用借记卡。",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "items": [
+          {
+            "product_id": "GIFT-CARD-01",
+            "quantity": 1
+          }
+        ],
+        "payment_method": "debit_card",
+        "shipping_address": {
+          "city": "九龙尖沙咀",
+          "country": "HK",
+          "state": "香港",
+          "street": "弥敦道100号",
+          "zip": "999077"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 974.2,
+      "missing_params": [],
+      "wrong_params": {
+        "shipping_address": {
+          "expected": {
+            "street": "九龙尖沙咀弥敦道100号",
+            "city": "Hong Kong",
+            "zip": "999077",
+            "country": "HK"
+          },
+          "actual": {
+            "city": "九龙尖沙咀",
+            "country": "HK",
+            "state": "香港",
+            "street": "弥敦道100号",
+            "zip": "999077"
+          }
+        }
+      },
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_distractor_01",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "distractor",
+      "prompt": "I almost ordered GADGET-OLD but it's discontinued. Instead, order 2x GADGET-NEW (silver). Ship to 55 Pine Rd, Seattle, 98101, US, WA. Credit card. Use code UPGRADE20.",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "coupon_code": "UPGRADE20",
+        "items": [
+          {
+            "options": {
+              "color": "silver"
+            },
+            "product_id": "GADGET-NEW",
+            "quantity": 2
+          }
+        ],
+        "payment_method": "credit_card",
+        "shipping_address": {
+          "city": "Seattle",
+          "country": "US",
+          "state": "WA",
+          "street": "55 Pine Rd",
+          "zip": "98101"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": true,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 1016.7,
+      "missing_params": [],
+      "wrong_params": {},
+      "extra_params": [],
+      "error": null
+    },
+    {
+      "case_id": "order_distractor_02",
+      "tool_name": "create_order",
+      "complexity": "complex",
+      "test_type": "distractor",
+      "prompt": "上次我在这买了LAPTOP-PRO感觉不错。这次帮我买LAPTOP-AIR，1台，金色。地址还是老地方：杭州市西湖区文三路200号，310012，中国，浙江。PayPal付款。",
+      "actual_tool_name": "create_order",
+      "actual_parameters": {
+        "items": [
+          {
+            "options": {
+              "color": "金色"
+            },
+            "product_id": "LAPTOP-AIR",
+            "quantity": 1
+          }
+        ],
+        "payment_method": "paypal",
+        "shipping_address": {
+          "city": "杭州市",
+          "country": "中国",
+          "state": "浙江",
+          "street": "西湖区文三路200号",
+          "zip": "310012"
+        }
+      },
+      "valid_json": true,
+      "tool_correct": true,
+      "params_present": true,
+      "params_correct": false,
+      "format_compliant": true,
+      "optional_bonus": 1.0,
+      "response_time_ms": 980.3,
+      "missing_params": [],
+      "wrong_params": {
+        "items": {
+          "expected": [
+            {
+              "product_id": "LAPTOP-AIR",
+              "quantity": 1,
+              "options": {
+                "color": "gold"
+              }
+            }
+          ],
+          "actual": [
+            {
+              "options": {
+                "color": "金色"
+              },
+              "product_id": "LAPTOP-AIR",
+              "quantity": 1
+            }
+          ]
+        },
+        "shipping_address": {
+          "expected": {
+            "street": "西湖区文三路200号",
+            "city": "Hangzhou",
+            "zip": "310012",
+            "country": "CN"
+          },
+          "actual": {
+            "city": "杭州市",
+            "country": "中国",
+            "state": "浙江",
+            "street": "西湖区文三路200号",
+            "zip": "310012"
+          }
+        }
+      },
+      "extra_params": [],
+      "error": null
+    }
+  ]
+}
